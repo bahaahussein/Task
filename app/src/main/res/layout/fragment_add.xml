@@ -3,12 +3,19 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:layout_margin="4dp"
-        android:id="@+id/edit_text_add"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_addd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine" />
+        android:layout_margin="4dp">
+        <EditText
+            android:id="@+id/edit_text_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="@string/hint_add"/>
+    </android.support.design.widget.TextInputLayout>
+
     <Button
         android:id="@+id/button_add"
         android:layout_width="wrap_content"
